@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
+
+ <link rel="stylesheet" href="Home.css">
+<nav class="navbar">
+    <div class="navbar-left">
+        <a href="#" class="logo">Logo</a>
+        <ul class="nav-links">
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Items.html">Items</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+        </ul>
+        <div class="search-icon" id="searchIcon"><i class='bx bx-search-alt-2'></i></div>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search">
+    </div>
+
+    <div class="navbar-right">
+        <button class="btn">Login</button>
+        <button class="btn">Sign Up</button>
+    </div>
+
+    <div class="menu-icon" id="menuIcon">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</nav>
+
+<div class="sidebar" id="sidebar">
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Items.html">Items</a></li>
+        <li><a href="Blogs.html">Blogs</a></li>
+    </ul>
+    <div class="buttons-auth">
+        <button class="Signup">Signup</button>
+        <button class="Login">Login</button>
+    </div>
+</div>
+
+
+
+<section class="overlay-section">
+    <div class="overlay">
+        <div class="overlay-flex">
+            <div class="overlay-text-flex">
+                <h2>Buy premium PHP scripts and create amazing websites</h2>
+            </div>
+            <div class="overlay-img-flex">
+                <img src="https://support.riftzilla.com/uploads/logo/darkicon/20240329222944.png" class="main-img" alt="Premium PHP scripts logo">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Card Section -->
+<section class="card-section">
+<div class="card" id="card1">
+    <img src="https://mvnthemes.com/assets/featured/dark/secure.png" alt="Premium Products">
+    <h4>Premium Products</h4>
+    <p>Experience Excellence: Handpicked Products for Quality and Craftsmanship.</p>
+</div>
+
+<div class="card" id="card2">
+    <img src="https://mvnthemes.com/assets/featured/dark/trust.png" alt="Premium Products">
+    <h4>Premium Products</h4>
+    <p>Experience Excellence: Handpicked Products for Quality and Craftsmanship.</p>
+</div>
+
+<div class="card" id="card3">
+    <img src="https://mvnthemes.com/assets/featured/dark/premium.png" alt="Premium Products">
+    <h4>Premium Products</h4>
+    <p>Experience Excellence: Handpicked Products for Quality and Craftsmanship.</p>
+</div>
+
+<div class="card" id="card4">
+    <img src="https://mvnthemes.com/assets/featured/dark/premium.png" alt="Premium Products">
+    <h4>Premium Products</h4>
+    <p>Experience Excellence: Handpicked Products for Quality and Craftsmanship.</p>
+</div>
+
+<div class="card" id="card5">
+    <img src="https://mvnthemes.com/assets/featured/dark/premium.png" alt="Premium Products">
+    <h4 class="heading-card">Premium Products</h4>
+    <p>Experience Excellence: Handpicked Products for Quality and Craftsmanship.</p>
+</div>
+</section>
+
+
+
+<!---Cards-->
+
+
+
+
+<div class="container-grid-item" id="items-section">
+<h2 class="section-headings">Items</h2>
+<div class="grid-item-card">
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/f05uebjtwaqyrdjz14slmlalrtxbulbmyoxddammz4bx0k3bxo/preview_image" alt="Zontal Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Zontal Arcade HTML 5 Game Portal</h3>
+            <p>$20</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/kkibn7zd3flj1em6tl8e5ut8kpv3bkslu45rx0fpyodo1l2rtl/preview_image" alt="Smilo Emoji" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Smilo - Simple Emoji Copy and Paste</h3>
+            <p>$15</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/gaxkutxywj4f5mx3qxnlwbuz9yclekr709jx2acugleb9qgcdy/preview_image" alt="Poko Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Poko Arcade HTML 5 Game Portal</h3>
+            <p>$12</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+</div>
+</div>
+<!---Cards blog-->
+<div class="container-grid-item" id="items-section">
+<h2 class="section-headings">Items</h2>
+<div class="grid-item-card">
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/f05uebjtwaqyrdjz14slmlalrtxbulbmyoxddammz4bx0k3bxo/preview_image" alt="Zontal Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Zontal Arcade HTML 5 Game Portal</h3>
+            <p>$20</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/kkibn7zd3flj1em6tl8e5ut8kpv3bkslu45rx0fpyodo1l2rtl/preview_image" alt="Smilo Emoji" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Smilo - Simple Emoji Copy and Paste</h3>
+            <p>$15</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/gaxkutxywj4f5mx3qxnlwbuz9yclekr709jx2acugleb9qgcdy/preview_image" alt="Poko Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Poko Arcade HTML 5 Game Portal</h3>
+            <p>$12</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/3gsvwqyeewnmnlvj6s4jyrykrlvmsws7zmjximtmdk9lyb1omj/preview_image" alt="Poko Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Poko Arcade HTML 5 Game Portal</h3>
+            <p>$12</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/4teo5wyzugbfdbtkustomhgyhujc6ktjulc0ujvxoskgmjynkb/preview_image" alt="Poko Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Poko Arcade HTML 5 Game Portal</h3>
+            <p>$12</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/8ynpbfbeizpdfqcqdst9b8wozi9sffmha1klguramqlxxyyqbv/preview_image" alt="Poko Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Poko Arcade HTML 5 Game Portal</h3>
+            <p>$12</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/dwwyojr4r2ybmtgamtbr5lhksykknuvzprobvqyjdfsatsw6c3/preview_image" alt="Poko Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Poko Arcade HTML 5 Game Portal</h3>
+            <p>$12</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/yaela7la4xnoabimczydnk8rnxsdeyakxha7xmgedhyaimx4nk/preview_image" alt="Poko Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Poko Arcade HTML 5 Game Portal</h3>
+            <p>$12</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/gaxkutxywj4f5mx3qxnlwbuz9yclekr709jx2acugleb9qgcdy/preview_image" alt="Poko Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Poko Arcade HTML 5 Game Portal</h3>
+            <p>$12</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/gaxkutxywj4f5mx3qxnlwbuz9yclekr709jx2acugleb9qgcdy/preview_image" alt="Poko Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Poko Arcade HTML 5 Game Portal</h3>
+            <p>$12</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item" id="cards">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/gaxkutxywj4f5mx3qxnlwbuz9yclekr709jx2acugleb9qgcdy/preview_image" alt="Poko Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Poko Arcade HTML 5 Game Portal</h3>
+            <p>$12</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+    <div class="card-item">
+        <img src="https://pstqargzbtwfgxdbunqicmgszstkmwdzztxjkauztxrjcploxv.net/v1/a/gaxkutxywj4f5mx3qxnlwbuz9yclekr709jx2acugleb9qgcdy/preview_image" alt="Poko Arcade" class="card-img">
+        <div class="icon-overlay">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div class="card-content">
+            <h3>Poko Arcade HTML 5 Game Portal</h3>
+            <p>$12</p>
+            <p class="author">codermvn • Scripts & Codes</p>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<!---Flash Sale-->
+<div class="flash-sale">
+<h2>FLASH SALE</h2>
+<p>For only a short period of time you can grab these files with a great discount</p>
+<div class="countdown">
+    <div class="days" id="days">5</div>
+    <div class="hours" id="hours">0</div>
+    <div class="minutes" id="minutes">3</div>
+    <div class="seconds" id="seconds">51</div>
+</div>
+</div>
+<section class="newsletter-signup">
+<div class="news-container" id="news-container">
+    <h2 class="newsheading">Newsletter</h2>
+    <form action="mailto:developer@gmail.com" method="post" enctype="text/plain">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+</div>
+</section>
+<footer>
+<div class="footer-container">
+    <div class="footer-column">
+        <h4>Follow us</h4>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-pinterest"></i></a>
+            <a href="#"><i class="fa fa-rss"></i></a>
+        </div>
+    </div>
+    <div class="footer-column">
+        <h4>Popular categories</h4>
+        <ul>
+            <li><a href="#">PHP Scripts</a></li>
+            <li><a href="#">App Templates</a></li>
+            <li><a href="#">iOS App Templates</a></li>
+            <li><a href="#">Android App Templates</a></li>
+            <li><a href="#">WordPress Plugins</a></li>
+            <li><a href="#">WordPress Themes</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h4>More info</h4>
+        <ul>
+            <li><a href="#">About Codester</a></li>
+            <li><a href="#">Sell your work</a></li>
+            <li><a href="#">Affiliate program</a></li>
+        </ul>
+    </div>
+    <div class="footer-column">
+        <h4>Help & support</h4>
+        <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Forum</a></li>
+            <li><a href="#">Blog</a></li>
+        </ul>
+    </div>
+</div>
+<div class="bottom-footer">
+    <p>Made in The Netherlands - © 2024 Codester / Soniq Internet Media. All rights reserved.</p>
+</div>
+</footer>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="Home.js"></script>
+  /*===== GOOGLE FONTS =====*/
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+  :root {
+      --body-font: 'Poppins', sans-serif;
+      --first-color: navy;
+  }
+
+  html {
+      scroll-behavior: smooth;
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: var(--body-font);
+  }
+
+  /* Navbar styling */
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: var(--first-color);
+      padding: 20px;
+      color: white;
+  }
+
+  .navbar-left {
+      display: flex;
+      align-items: center;
+  }
+
+  .logo {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin-right: 20px;
+  }
+
+  .nav-links {
+      display: flex;
+      list-style: none;
+  }
+
+  .nav-links li {
+      margin-right: 20px;
+  }
+
+  .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+  }
+
+  .search-icon {
+      cursor: pointer;
+      margin-left: 10px;
+      font-size: 25px;
+      margin-top: 8px;
+  }
+
+  .search-input {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      display: none;
+      margin-left: 10px;
+      background-color: #fff;
+  }
+
+  .navbar-right .btn {
+      padding: 10px 20px;
+      margin-left: 10px;
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 1px solid #fff;
+      transition: background-color 0.3s, color 0.3s;
+  }
+
+  .navbar-right .btn:hover {
+      background-color: white;
+      color: var(--first-color);
+  }
+
+  /* Sidebar styling */
+  .sidebar {
+      position: fixed;
+      left: -250px;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background-color: var(--first-color);
+      color: white;
+      transition: 0.3s;
+      padding: 20px;
+      z-index: 1000;
+  }
+
+  .sidebar.active {
+      left: 0;
+  }
+
+  .sidebar ul {
+      list-style: none;
+      margin-top: 50px;
+  }
+
+  .sidebar ul li {
+      margin-bottom: 20px;
+  }
+
+  .sidebar ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+  }
+
+  .buttons-auth {
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+  }
+
+  .Signup, .Login {
+      padding: 10px 20px;
+      background-color: transparent;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 1px solid #fff;
+      margin-bottom: 10px;
+      width: 90%;
+  }
+
+  .Signup:hover, .Login:hover {
+      background-color: white;
+      color: var(--first-color);
+  }
+
+  .menu-icon {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+  }
+
+  .menu-icon span {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 3px 0;
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+      .nav-links,
+      .navbar-right .btn {
+          display: none;
+      }
+
+      .menu-icon {
+          display: flex;
+      }
+
+      .navbar-left {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+      }
+
+      .search-icon {
+          margin-right: 10px;
+      }
+
+      .navbar {
+          padding: 10px 15px;
+      }
+
+      .navbar-left {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+      }
+
+      .search-icon {
+          order: 3;
+      }
+
+      .search-input {
+          order: 4;
+          margin-left: 10px;
+      }
+
+      .logo {
+          order: 1;
+          margin-left: 15px;
+      }
+
+      .nav-links {
+          order: 2;
+      }
+  }
+
+  @media (max-width: 600px) {
+      .logo {
+          font-size: 1.2rem;
+      }
+
+      .search-icon {
+          font-size: 22px;
+      }
+
+      .sidebar ul li a {
+          font-size: 0.9rem;
+      }
+
+      .buttons-auth button {
+          padding: 8px 15px;
+      }
+  }
+
+
+
+
+ /* Main Overlay Section */
+ .overlay-section {
+      position: relative;
+      height: 50vh; /* Adjust height as needed */
+      background-color: rgba(0, 0, 128, 0.7);
+  }
+
+  .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 128, 0.7);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 20px;
+  }
+
+  h1 {
+      font-size: 2.5em; /* Adjust as needed */
+      margin: 0;
+  }
+
+  p {
+      font-size: 1.2em; /* Adjust as needed */
+      margin: 10px 0 0;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+      h1 {
+          font-size: 2em;
+      }
+
+      p {
+          font-size: 1em;
+      }
+  }
+
+  @media (max-width: 480px) {
+      h1 {
+          font-size: 1.5em;
+      }
+
+      p {
+          font-size: 0.9em;
+      }
+  }
+
+  /* Flex Container for overlay content */
+  .overlay-flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 1200px;
+      padding: 20px;
+      box-sizing: border-box;
+  }
+
+  .overlay-text-flex {
+      flex: 1;
+      padding: 10px;
+      color: white;
+      text-align: left;
+      font-size: 22px;
+  }
+
+  .overlay-img-flex {
+      flex: 1;
+      padding: 10px;
+  }
+
+  .overlay-img-flex img {
+      max-width: 100%;
+      height: 320px;
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+      .overlay-section {
+          height: 500px;
+      }
+
+      .overlay-flex {
+          flex-direction: column;
+          margin-top: 50px;
+      }
+
+      .overlay-text-flex,
+      .overlay-img-flex {
+          padding: 10px;
+          text-align: center;
+      }
+
+      .overlay-text-flex {
+          font-size: 16px;
+      }
+
+      .overlay-img-flex img {
+          height: 250px;
+          width: 50%;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .overlay-section {
+          height: 500px;
+      }
+
+      .overlay-img-flex img {
+          width: 80%;
+      }
+  }
+
+
+
+
+/* Card Section */
+.card-section {
+          max-width: 1440px;
+          margin: 10px auto 0 auto; /* Card section overlaps e-commerce section */
+          display: grid;
+          grid-template-columns: repeat(5, 1fr);
+          gap: 15px;
+          padding: 20px;
+          z-index: 2;
+          position: relative;
+      }
+
+      .card {
+          background: #fff;
+          padding: 20px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+          border-radius: 10px;
+          text-align: center;
+          height: 220px;
+          transition: transform 0.2s ease-in-out;
+
+      }
+
+      .card img {
+          max-width: 100%;
+          height: auto;
+      }
+
+      .card:hover {
+          transform: translateY(-5px);
+      }
+
+      .card h4 {
+          color: black;
+          margin-top: 10px;
+      }
+
+      .card p {
+          font-size: 14px;
+          color: #555;
+          line-height: 1.5;
+          margin-top: 30px;
+      }
+
+      .heading-card {
+          color: white;
+      }
+
+      /* Responsive Layout */
+      @media (max-width: 1200px) {
+          .card-section {
+              grid-template-columns: repeat(4, 1fr);
+          }
+          .card {
+          height: auto;
+          }
+      }
+
+
+      @media (max-width: 900px) {
+          .card-section {
+              grid-template-columns: repeat(3, 1fr);
+          }
+
+          .ecommerce-section {
+              height: 350px;
+          }
+          .card {
+          height: auto;
+          }
+     
+      }
+
+      @media (max-width: 600px) {
+          .card-section {
+              grid-template-columns: repeat(2, 1fr);
+          }
+
+          .ecommerce-section {
+              height: 300px;
+          }
+          .card {
+          height: auto;
+          }
+     
+      }
+
+      @media (max-width: 400px) {
+          .card-section {
+              grid-template-columns: 1fr;
+          }
+
+        
+          .card p {
+              margin-top: 20px;
+          }
+          .card {
+          height: auto;
+          }
+     
+     }
+     .container-grid-item {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 5px; /* Optional padding for container */
+}
+
+.container-grid-item  h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading */
+}
+
+.grid-item-card {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Responsive columns */
+align-items: center;
+justify-items: center; /* Center items in each grid cell */
+margin: 0 auto;
+gap: 20px; /* Optional: Add space between cards */
+max-width: 1200px; /* Optional: Set a max-width for the grid */
+}
+.card-item {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+  margin-top: 10px;
+  width: 100%; /* Allow full width of the grid cell */
+  max-width: 390px; /* Optional: Set a max-width for cards */
+margin: 0 auto;
+
+}
+
+
+.card-item:hover {
+  transform: scale(1.05);
+}
+
+.card-item:hover h3::after {
+  width: 100%;
+}
+
+.card-item:hover .icon-overlay {
+  opacity: 1;
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  position: relative;
+  color: black;
+}
+
+.card-content h3::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: navy;
+  transition: width 0.3s ease;
+}
+
+.card-content p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: black; /* Ensure text is visible on dark background */
+}
+
+.card-content .author {
+  color: #888;
+  font-size: 14px;
+}
+
+.icon-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%; /* Center the icon */
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  h2 {
+      font-size: 22px;
+  }
+
+  .card-content h3 {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  h2 {
+      font-size: 20px;
+  }
+
+  .grid-item-card {
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Full width for mobile */
+  }
+
+  .card-img {
+      height: 150px; /* Adjust image height on smaller screens */
+  }
+
+  .icon-overlay {
+      font-size: 30px; /* Reduce icon size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+      font-size: 18px; /* Further adjust heading size */
+  }
+
+  .card-content p {
+      font-size: 14px; /* Reduce font size for smaller text */
+  }
+
+  .card-content .author {
+      font-size: 12px; /* Further reduce author text size */
+  }
+
+  .card-item {
+      margin: 5px 0; /* Reduce margin between cards on mobile */
+  }
+}
+
+
+.flash-sale {
+text-align: center;
+padding: 20px;
+background: rgb(63, 94, 251);
+background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+color: #fff;
+margin: 50px auto;
+max-width: 100%; /* Ensure max-width for responsiveness */
+border-radius: 10px; /* Rounded corners */
+height: 300px;
+overflow: hidden; /* Hides any overflow content */
+}
+
+.flash-sale h2 {
+margin-top: 20px;
+font-size: 2.5em; /* Responsive font size */
+}
+
+.flash-sale p {
+font-size: 1.2em; /* Responsive font size */
+margin: 10px 0;
+}
+
+.countdown {
+display: flex;
+justify-content: center;
+font-size: 1.5em; /* Responsive font size */
+font-weight: bold;
+margin-top: 30px;
+overflow: hidden; /* Prevent overflow in countdown */
+}
+
+.countdown div {
+flex: 1; /* Ensures equal width */
+max-width: 100px; /* Max width for smaller screens */
+height: 70px;
+line-height: 70px;
+border: 1px solid #ccc;
+background-color: navy;
+color: #fff;
+margin: 0 5px;
+border-radius: 5px;
+text-align: center; /* Center align the countdown numbers */
+}
+
+.countdown div:first-child {
+border-left: 0;
+}
+
+.countdown div:last-child {
+border-right: 0;
+}
+
+/* Media Queries for Responsive Adjustments */
+@media (max-width: 600px) {
+.flash-sale {
+  height: auto; /* Adjust height for smaller screens */
+  padding: 10px; /* Reduced padding */
+}
+
+.flash-sale h2 {
+  font-size: 2em; /* Decrease font size on smaller screens */
+}
+
+.flash-sale p {
+  font-size: 1em; /* Decrease font size on smaller screens */
+}
+
+.countdown {
+  flex-direction: column; /* Stack countdown elements vertically */
+  align-items: center; /* Center align the countdown divs */
+}
+
+.countdown div {
+  margin: 10px 0; /* Add margin for spacing */
+  max-width: none; /* Remove max-width for vertical layout */
+  width: 100%; /* Take full width */
+}
+}
+
+
+
+  
+  .newsletter-signup {
+      text-align: center;
+      padding: 20px;
+      background: rgb(2, 0, 36);
+      background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 75, 121, 1) 70%, rgba(0, 212, 255, 1) 100%);
+      color: white;
+      margin-top: 30px;
+      height: 300px; /* Adjust height to auto for flexibility */
+      overflow: hidden; /* Prevent overflow within the section */
+  }
+  
+  .newsheading {
+      margin: 0;
+  }
+  
+  .news-container {
+      margin-top: 50px;
+  }
+  
+  form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  }
+  
+  input[type="email"] {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 500px; /* Default width */
+      max-width: 80%; /* Set max-width to ensure it doesn’t overflow */
+      box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+  
+  button {
+      padding: 10px 30px;
+      background-color: navy;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-left: 10px; /* Spacing between input and button */
+  }
+  
+  @media only screen and (max-width: 768px) {
+      input[type="email"] {
+          width: 100%; /* Full width on small screens */
+          margin-bottom: 10px; /* Spacing below input field */
+      }
+      button {
+          width: 50%; /* Full width button on small screens */
+      }
+  }
+
+  footer {
+  background-color:navy;
+  color: #ffffff;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #ffffff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background-color: #ccc;
+  color: #fff;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Bottom Footer */
+.bottom-footer {
+  margin-top: 40px;
+  border-top: 1px solid #777;
+  padding: 20px;
+  text-align: center;
+}
+
+.bottom-footer p {
+  font-size: 14px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+  }
+
+  .footer-column {
+      margin-bottom: 30px;
+  }
+
+  .social-icons {
+      justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-column h4 {
+      font-size: 16px;
+  }
+
+  .footer-column ul li {
+      font-size: 14px;
+  }
+
+  .bottom-footer p {
+      font-size: 12px;
+  }
+}
+
+#items-section{
+  margin-top: 10px;
+}
+.section-headings {
+  margin-left: -80%;
+  margin-top: 50px;
+}
+
+@media (max-width: 764px) {
+  .section-headings {
+      margin-left: 0; /* Remove left margin */
+      margin-right: 0; /* Remove right margin */
+      margin-top: 50px; /* Keep top margin */
+      display: flex; /* Use flexbox for centering */
+      justify-content: center; /* Center horizontally */
+      text-align: center; /* Center text alignment */
+  }
+}
+
+   
+    // Toggle sidebar for mobile
+    document.getElementById('menuIcon').addEventListener('click', function () {
+        const sidebar = document.getElementById('sidebar');
+        sidebar.classList.toggle('active');
+    });
+
+    // Toggle search input visibility
+    document.getElementById('searchIcon').addEventListener('click', function () {
+        const searchInput = document.getElementById('searchInput');
+        if (searchInput.style.display === 'block') {
+            searchInput.style.display = 'none';
+        } else {
+            searchInput.style.display = 'block';
+            searchInput.focus(); // Automatically focus on input when it appears
+        }
+    });
+
+    // Set the countdown time (in seconds)
+    let countdownTime = (5 * 24 * 60 * 60) + (0 * 60 * 60) + (3 * 60) + 51; // 5 days, 0 hours, 3 minutes, 51 seconds
+
+    // Function to update the countdown
+    function updateCountdown() {
+        // Calculate the days, hours, minutes, and seconds left
+        const days = Math.floor(countdownTime / (24 * 60 * 60));
+        const hours = Math.floor((countdownTime % (24 * 60 * 60)) / (60 * 60));
+        const minutes = Math.floor((countdownTime % (60 * 60)) / 60);
+        const seconds = countdownTime % 60;
+
+        // Update the HTML elements with the calculated values
+        document.getElementById('days').innerText = days;
+        document.getElementById('hours').innerText = hours;
+        document.getElementById('minutes').innerText = minutes;
+        document.getElementById('seconds').innerText = seconds;
+
+        // Decrease the countdown time by one second
+        countdownTime--;
+
+        // If the countdown reaches zero, stop the timer and optionally show a message
+        if (countdownTime < 0) {
+            clearInterval(countdownInterval);
+            document.querySelector('.flash-sale').innerHTML = '<h2>TIME IS UP!</h2>';
+        }
+    }
+
+    // Update the countdown every second
+    const countdownInterval = setInterval(updateCountdown, 1000);
+
+    // Initial call to display the countdown immediately
+    updateCountdown();
+
+    // ScrollReveal animations
+    ScrollReveal().reveal('#logo', {
+        duration: 1000,
+        origin: 'left',
+        distance: '50px',
+        delay: 200,
+    });
+    ScrollReveal().reveal('#nav-links', {
+        duration: 1000,
+        origin: 'right',
+        distance: '50px',
+        delay: 200,
+    });
+    ScrollReveal().reveal('#nav-linkssidebar', {
+        duration: 1000,
+        origin: 'left',
+        distance: '50px',
+        delay: 200,
+    });
+    ScrollReveal().reveal('#card1', {
+        duration: 1100,
+        origin: 'bottom',
+        distance: '100px',
+        delay: 300,
+    });
+    ScrollReveal().reveal('#card2', {
+        duration: 1200,
+        origin: 'bottom',
+        distance: '100px',
+        delay: 300,
+    });
+    ScrollReveal().reveal('#card3', {
+        duration: 1400,
+        origin: 'bottom',
+        distance: '100px',
+        delay: 300,
+    });
+    ScrollReveal().reveal('#card4', {
+        duration: 1600,
+        origin: 'bottom',
+        distance: '100px',
+        delay: 300,
+    });
+    ScrollReveal().reveal('#card5', {
+        duration: 1800,
+        origin: 'bottom',
+        distance: '100px',
+        delay: 300,
+    });
+    ScrollReveal().reveal('#cards', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '100px',
+        delay: 300,
+    });
+    ScrollReveal().reveal('#days', {
+        duration: 1000,
+        origin: 'left',
+        distance: '100px',
+        delay: 300,
+    });
+    ScrollReveal().reveal('#hours', {
+        duration: 1000,
+        origin: 'left',
+        distance: '100px',
+        delay: 300,
+    });
+    ScrollReveal().reveal('#minutes', {
+        duration: 1000,
+        origin: 'right',
+        distance: '100px',
+        delay: 300,
+    });
+    ScrollReveal().reveal('#seconds', {
+        duration: 1000,
+        origin: 'right',
+        distance: '100px',
+        delay: 300,
+    });
+    ScrollReveal().reveal('#news-container', {
+        duration: 1000,
+        origin: 'bottom',
+        distance: '100px',
+        delay: 300,
+    });
+    
+    ScrollReveal().reveal('.overlay-text-flex', {
+        duration: 1000,
+        origin: 'left',
+        distance: '100px',
+        delay: 300,
+    });
+
+    ScrollReveal().reveal('.overlay-img-flex', {
+        duration: 1000,
+        origin: 'right',
+        distance: '100px',
+        delay: 300,
+    });
+  
