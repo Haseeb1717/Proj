@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
+
+    <title>Animated Registration Form</title>
+
+       <style>
+   
+:root {
+    --body-font: 'Poppins', sans-serif;
+    --first-color: navy;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--first-color);
+    padding: 20px;
+    color: white;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.search-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 25px;
+    margin-top: 8px;
+}
+
+.search-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    display: none;
+    margin-left: 10px;
+    background-color: #fff;
+}
+
+.navbar-right .btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-right .btn:hover {
+    background-color: white;
+    color: var(--first-color);
+}
+
+/* Sidebar styling */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: var(--first-color);
+    color: white;
+    transition: 0.3s;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin-top: 50px;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.buttons-auth {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.Signup, .Login {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.Signup:hover, .Login:hover {
+    background-color: white;
+    color: var(--first-color);
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .nav-links,
+    .navbar-right .btn {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .navbar-left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+    }
+
+    .search-icon {
+        margin-right: 10px;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-left {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .search-icon {
+        order: 3;
+    }
+
+    .search-input {
+        order: 4;
+        margin-left: 10px;
+    }
+
+    .logo {
+        order: 1;
+        margin-left: 15px;
+    }
+
+    .nav-links {
+        order: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .search-icon {
+        font-size: 22px;
+    }
+
+    .sidebar ul li a {
+        font-size: 0.9rem;
+    }
+
+    .buttons-auth button {
+        padding: 8px 15px;
+    }
+}
+     * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+        .wave {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            z-index: -1;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 7rem;
+            padding: 0 2rem;
+        }
+        .img {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .registration-content {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: center;
+        }
+        .img img {
+            width: 500px;
+        }
+        form {
+            width: 360px;
+        }
+        .registration-content h2 {
+            margin: 15px 0;
+            color: #333;
+            text-transform: uppercase;
+            font-size: 2.9rem;
+        }
+        .input-div {
+            position: relative;
+            display: grid;
+            grid-template-columns: 7% 93%;
+            margin: 25px 0;
+            padding: 5px 0;
+            border-bottom: 2px solid #d9d9d9;
+        }
+        .i {
+            color: #d9d9d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        i{
+            font-size: 25px;
+        }
+        .input-div > div {
+            position: relative;
+            height: 45px;
+        }
+        .input-div > div > h5 {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #999;
+            font-size: 18px;
+            transition: .3s;
+        }
+        .input-div.focus > div > h5 {
+            top: -5px;
+            font-size: 15px;
+            color: navy;
+        }
+        .input-div.focus > .i > i{
+	color:navy;
+}
+
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: navy;
+	transition: .4s;
+}
+
+.input-div:before{
+	right: 50%;
+}
+
+.input-div:after{
+	left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+
+
+        .input-div > div > input {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            outline: none;
+            background: none;
+            padding: 0.5rem 0.7rem;
+            font-size: 1.2rem;
+            color: #555;
+            font-family: 'Poppins', sans-serif;
+        }
+        .connect-with-google {
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #f1f1f1; /* Add hover effect */
+    color: black;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    cursor: pointer; /* Add pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+display: flex;
+gap: 10px;
+    align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.connect-with-google:hover {
+    background-color: #f1f1f1; /* Add hover effect */
+}
+        .btnreg {
+            display: block;
+            width: 100%;
+            height: 50px;
+            border-radius: 25px;
+            outline: none;
+            border: none;
+            background-image: linear-gradient(to right,#000040, #000080);
+            background-size: 200%;
+            font-size: 1.2rem;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            text-transform: uppercase;
+            margin: 1rem 0;
+            cursor: pointer;
+            transition: .5s;
+        }
+        .btnreg:hover {
+            background-position: right;
+        }
+        @media screen and (max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .img {
+                display: none;
+            }
+            .wave {
+                display: none;
+            }
+            .registration-content {
+                justify-content: center;
+            }
+        }
+
+
+        
+footer {
+        background-color:navy;
+        color: #ffffff;
+        padding: 40px 20px;
+        margin-top: 50px;
+    }
+    
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .footer-column {
+        flex: 1 1 200px;
+        margin: 20px;
+    }
+    
+    .footer-column h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+    
+    .footer-column ul {
+        list-style: none;
+    }
+    
+    .footer-column ul li {
+        margin-bottom: 8px;
+    }
+    
+    .footer-column ul li a {
+        color: #ccc;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .footer-column ul li a:hover {
+        color: #ffffff;
+    }
+    
+    .social-icons {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .social-icons a {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background-color: #ccc;
+        color: #fff;
+        text-align: center;
+        line-height: 35px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+        background-color: #ffffff;
+        color: #333;
+    }
+    
+    /* Bottom Footer */
+    .bottom-footer {
+        margin-top: 40px;
+        border-top: 1px solid #777;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .bottom-footer p {
+        font-size: 14px;
+        color: #aaa;
+    }
+    
+    @media (max-width: 768px) {
+        .footer-container {
+            flex-direction: column;
+        }
+    
+        .footer-column {
+            margin-bottom: 30px;
+        }
+    
+        .social-icons {
+            justify-content: center;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .footer-column h4 {
+            font-size: 16px;
+        }
+    
+        .footer-column ul li {
+            font-size: 14px;
+        }
+    
+        .bottom-footer p {
+            font-size: 12px;
+        }
+    }
+ 
+    </style>
+</head>
+<body>
+    
+     
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="#" class="logo">Logo</a>
+            <ul class="nav-links">
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Items.html">Items</a></li>
+                <li><a href="Blogs.html">Blogs</a></li>
+            </ul>
+            <div class="search-icon" id="searchIcon"><i class='bx bx-search-alt-2'></i></div>
+            <input type="text" class="search-input" id="searchInput" placeholder="Search">
+        </div>
+
+        <div class="navbar-right">
+            <button class="btn">Login</button>
+            <button class="btn">Sign Up</button>
+        </div>
+
+        <div class="menu-icon" id="menuIcon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Items.html">Items</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+        </ul>
+        <div class="buttons-auth">
+            <button class="Signup">Signup</button>
+            <button class="Login">Login</button>
+        </div>
+    </div>
+    <img class="wave" src="wave.png" alt="wave background">
+    <div class="container">
+        <div class="img">
+            <img src="https://cdni.iconscout.com/illustration/premium/thumb/online-payment-security-illustration-download-in-svg-png-gif-file-formats--digital-bank-credit-card-data-protection-interface-cyber-pack-device-illustrations-4077848.png?f=webp" alt="Secure Payment Illustration">
+        </div>
+        <div class="registration-content">
+            <form action="" method="POST">
+                <h2 class="title">Register</h2>
+                
+                <button class="connect-with-google"><img src="data:image/png;base64,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" style="width:30px; height: 30px;">Signup with Google</button>
+<p style="text-align: center;">OR</p>
+                <div class="input-div">
+                    <div class="i">
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="div">
+                        <h5>First Name</h5>
+                        <input type="text" name="first-name" class="input" required>
+                    </div>
+                </div>
+                <div class="input-div">
+                    <div class="i">
+                        <i class='bx bx-user'></i>
+                    </div>
+                    <div class="div">
+                        <h5>Last Name</h5>
+                        <input type="text" name="last-name" class="input" required>
+                    </div>
+                </div>
+                <div class="input-div">
+                    <div class="i">
+                        <i class='bx bx-envelope' ></i>
+                    </div>
+                    <div class="div">
+                        <h5>Email</h5>
+                        <input type="email" name="email" class="input" required>
+                    </div>
+                </div>
+                <div class="input-div">
+                    <div class="i">
+                        <i class='bx bxs-phone'></i>
+                    </div>
+                    <div class="div">
+                        <h5>Phone Number</h5>
+                        <input type="tel" name="phone" class="input" required>
+                    </div>
+                </div>
+                <div class="input-div pass">
+                    <div class="i"> 
+                        <i class='bx bx-lock-alt'></i>
+                    </div>
+                    <div class="div">
+                        <h5>Password</h5>
+                        <input type="password" name="password" class="input" required>
+                    </div>
+                </div>
+                <input type="submit" class="btnreg" value="Register">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Follow us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                    <a href="#"><i class="fa fa-rss"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Popular categories</h4>
+                <ul>
+                    <li><a href="#">PHP Scripts</a></li>
+                    <li><a href="#">App Templates</a></li>
+                    <li><a href="#">iOS App Templates</a></li>
+                    <li><a href="#">Android App Templates</a></li>
+                    <li><a href="#">WordPress Plugins</a></li>
+                    <li><a href="#">WordPress Themes</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>More info</h4>
+                <ul>
+                    <li><a href="#">About Codester</a></li>
+                    <li><a href="#">Sell your work</a></li>
+                    <li><a href="#">Affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Help & support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Forum</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p>Made in The Netherlands - © 2024 Codester / Soniq Internet Media. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+ <script>
+        const inputs = document.querySelectorAll(".input");
+
+        function addcl() {
+            let parent = this.parentNode.parentNode;
+            parent.classList.add("focus");
+        }
+
+        function remcl() {
+            let parent = this.parentNode.parentNode;
+            if (this.value == "") {
+                parent.classList.remove("focus");
+            }
+        }
+
+        inputs.forEach(input => {
+            input.addEventListener("focus", addcl);
+            input.addEventListener("blur", remcl);
+        });
+        
+    </script>
+    <script>
+    ScrollReveal().reveal('.wave', {
+        duration: 2000,       // Animation duration in milliseconds
+        distance: '50px',     // Distance the element should move
+        origin: 'bottom',     // Direction from which the element will appear
+        opacity: 0,           // Starting opacity
+    });
+    ScrollReveal().reveal('.bg-svg', {
+        duration: 1500,       // Animation duration in milliseconds
+        distance: '50px',     // Distance the element should move
+        origin: 'top',     // Direction from which the element will appear
+        opacity: 0,           // Starting opacity
+    });
+
+</script>
+</body>
+</html>
